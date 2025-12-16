@@ -39,9 +39,11 @@ class MainActivity : AppCompatActivity() {
             when(it.itemId){
                 R.id.profile -> {
                     Toast.makeText(this, "My Profile", Toast.LENGTH_SHORT).show()
+                    drawerLayout.closeDrawers()
                 }
                 R.id.newgroup -> {
                     Toast.makeText(this, "New Group", Toast.LENGTH_SHORT).show()
+                    drawerLayout.closeDrawers()
                 }
         }
         true
